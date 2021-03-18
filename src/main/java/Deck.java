@@ -7,6 +7,8 @@ public class Deck {
 
     public Deck() {
         this.deck = new ArrayList<Card>();
+        addCards();
+        shuffleCards();
     }
 
     public int cardCount() {
