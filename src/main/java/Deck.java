@@ -11,4 +11,15 @@ public class Deck {
     public int cardCount() {
         return this.deck.size();
     }
+
+    public void addCards() {
+        for (SuitType suitType : SuitType.values()) {
+            for (RankType rankType : RankType.values()) {
+                Card card = new Card(suitType, rankType);
+                this.deck.add(card);
+            }
+        }
+    }
+
+
 }
